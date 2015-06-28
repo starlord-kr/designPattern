@@ -2,6 +2,7 @@ package com.slowstarter.designpatterns.adaptor;
 
 import java.util.Enumeration;
 import java.util.Iterator;
+import java.util.Set;
 
 public class IteratorEnumeration<E> implements Enumeration<Object> {
 
@@ -11,6 +12,10 @@ public class IteratorEnumeration<E> implements Enumeration<Object> {
 		this.iterator = iterator;
 	}
 	
+	public IteratorEnumeration(Set<String> keySet) {
+		this.iterator = iterator;
+	}
+
 	@Override
 	public boolean hasMoreElements() {
 		return iterator.hasNext();
