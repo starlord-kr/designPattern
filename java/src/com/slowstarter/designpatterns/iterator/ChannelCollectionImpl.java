@@ -3,6 +3,9 @@ package com.slowstarter.designpatterns.iterator;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * @reference http://www.journaldev.com/1716/iterator-design-pattern-in-java-example-tutorial
+ */
 public class ChannelCollectionImpl implements ChannelCollection {
     private List<Channel> channelsList;
     
